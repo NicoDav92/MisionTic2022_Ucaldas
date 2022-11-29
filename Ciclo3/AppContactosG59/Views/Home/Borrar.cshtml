@@ -1,0 +1,49 @@
+@model AppContactosG59.Models.Contacto;
+@{
+    ViewData["Title"] = "Borrar Contacto";
+}
+
+<h1 class="text-center">Administracion de Contactos</h1>
+<div class="row">
+    <div class="col-12">
+        <div class="card border">
+            <div class="card-header text-center">
+                <h3><strong>Borrar contacto</strong></h3>
+            </div>
+            <div class="card-body">
+                <form asp-action="Borrar">
+                    
+                    <!--ID del usuario como campo oculto-->
+                    <input type="hidden" form="Id" />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <div class="form-group">
+                        <label asp-for="Nombre" class="control-label"></label>
+                        <input asp-for="Nombre" class="form-control" readonly />
+                        <span asp-validation-for="Nombre" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Telefono" class="control-label"></label>
+                        <input asp-for="Telefono" class="form-control" readonly />
+                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Celular" class="control-label"></label>
+                        <input asp-for="Celular" class="form-control" readonly />
+                        <span asp-validation-for="Celular" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email" class="control-label"></label>
+                        <input asp-for="Email" class="form-control" readonly />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mt-3">
+                        <button type="submit" class="btn btn-success"><i class="bi bi-eraser-fil"></i> Borrar
+                            Contacto</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+

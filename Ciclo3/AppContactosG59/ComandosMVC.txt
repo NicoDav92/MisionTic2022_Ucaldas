@@ -1,0 +1,21 @@
+Proyecto MVC 
+
+1.dotnet add package Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation 
+
+Este comando sirve para no tener que dar Control+C cada que realice un cambio al proyecto.
+
+2  Se añade en program.cs
+
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+
+
+Index cambio el titulo.
+
+"ConnectionStrings": {
+"ConnectionSqlServer": "Server=(localdb)\\mssqllocaldb;Database=AppContactoBD;Trusted_Connection=True;MultipleActiveResultSets=true"
+},
+
+3. En model creo la clase Contacto.cs
+
+4. En Contacto escribir prop

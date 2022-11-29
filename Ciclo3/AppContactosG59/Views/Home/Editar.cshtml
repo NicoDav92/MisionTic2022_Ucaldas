@@ -1,0 +1,49 @@
+@model AppContactosG59.Models.Contacto;
+@{
+    ViewData["Title"] = "Editar Contacto";
+}
+
+<h1 class="text-center">Administracion de Contactos</h1>
+<div class="row">
+    <div class="col-12">
+        <div class="card border">
+            <div class="card-header">
+                <h3><strong>Editar Contacto</strong></h3>
+            </div>
+                <div class="card-body">
+                    <form asp-action="Editar">
+                        
+                        @* Id del contacto como campo ocukto *@
+                        <input type="hidden" form = "Id"/>
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="form-group">
+                            <label asp-for="Nombre" class="control-label"></label>
+                            <input asp-for="Nombre" class="form-control" placeholder="Ingresa el nombre del usuario"/>
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Telefono" class="control-label"></label>
+                            <input asp-for="Telefono" class="form-control" placeholder="Ingresa el teléfono"/>
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Celular" class="control-label"></label>
+                            <input asp-for="Celular" class="form-control" placeholder="Ingresa el celular"/>
+                            <span asp-validation-for="Celular" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" placeholder="Ingresa el email"/>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-success"><i class="bi bi-pencil-fill"></i> Editar Usuario</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>
+
