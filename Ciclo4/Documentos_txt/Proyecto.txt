@@ -1,6 +1,0 @@
-Creacion del proyecto en React
-
-1. npx create-react-app demo-app
-
-2.npm start.
-
