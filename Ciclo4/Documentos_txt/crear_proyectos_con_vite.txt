@@ -1,0 +1,5 @@
+1. Crear el proyecto con vite
+2. En scr crear carpeta components
+3. En components crear archivo Header,jsx
+
+React router dom sirve para darle navegacion al proyecto. 

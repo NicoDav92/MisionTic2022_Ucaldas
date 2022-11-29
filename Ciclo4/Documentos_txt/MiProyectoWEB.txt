@@ -1,0 +1,9 @@
+Mi Primera Web
+
+Todo proyecto debe tener carpetas css, img y js dentro de js debe ir el index.html
+en index le doy html:5
+
+Repositorio Github
+https://github.com/IvanCastroRuiz/Proyectos-UCaldas/tree/main/G70
+
+http://localhost:4000/api/usuarios/prueba
